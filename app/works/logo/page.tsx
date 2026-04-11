@@ -49,7 +49,7 @@ export default function LogoWorksPage() {
           >
             <div className="w-full max-w-[520px] overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
               <Image
-                src="/AXIA_mockup.png"
+                src="/aixia_mockup.png"
                 alt="株式会社 AIXIA ロゴモックアップ"
                 width={1000}
                 height={800}
@@ -105,7 +105,7 @@ export default function LogoWorksPage() {
           >
             <div className="w-full max-w-[520px] overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
               <Image
-                src="/SYNAPSLINK_mockup.png"
+                src="/synapslink-mockup.png"
                 alt="SYNAPSLINK ロゴモックアップ"
                 width={1000}
                 height={800}
