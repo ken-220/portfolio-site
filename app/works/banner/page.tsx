@@ -34,7 +34,7 @@ export default function BannerWorksPage() {
               WORKS / BANNER
             </p>
 
-            <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">
+            <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl text-[#333]">
               IT企業向けのバナー
             </h1>
 
@@ -71,7 +71,7 @@ export default function BannerWorksPage() {
         >
           <div className="grid border-b border-[#d8d1c6] py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作意図</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">
               限られたスペースの中で、情報の優先順位が直感的に伝わるようレイアウトを設計しました。
               キャッチコピーを最も目立つ位置に配置し、視線が自然と左から右へ流れるように構成しています。
 
@@ -84,12 +84,12 @@ export default function BannerWorksPage() {
 
           <div className="grid border-b border-[#d8d1c6] py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作期間</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">2時間</p>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">2時間</p>
           </div>
 
           <div className="grid py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">使用ツール</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">Adobe Photoshop / Figma</p>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">Adobe Photoshop / Figma</p>
           </div>
         </section>
 
@@ -133,7 +133,7 @@ export default function BannerWorksPage() {
               WORKS / BANNER
             </p>
 
-            <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl">
+            <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl text-[#333]">
               美容・コスメのバナー
             </h2>
 
@@ -149,7 +149,7 @@ export default function BannerWorksPage() {
         >
           <div className="grid border-b border-[#d8d1c6] py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作意図</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">
               商品の魅力と清潔感を直感的に伝えるため、ビジュアルを主役としたレイアウトに設計しました。
               人物の表情と商品を大きく配置し、視覚的な印象だけで価値が伝わる構成を意識しています。
 
@@ -162,12 +162,12 @@ export default function BannerWorksPage() {
 
           <div className="grid border-b border-[#d8d1c6] py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作期間</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">2時間</p>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">2時間</p>
           </div>
 
           <div className="grid py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">使用ツール</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">Adobe Photoshop / Figma</p>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">Adobe Photoshop / Figma</p>
           </div>
         </section>
       </div>

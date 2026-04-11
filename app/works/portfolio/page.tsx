@@ -21,7 +21,7 @@ function FadeRow({
       <h2 className="text-sm font-semibold tracking-[0.12em] text-[#9cc7d8]">
         {title}
       </h2>
-      <div className="leading-9 text-slate-600">{children}</div>
+      <div className="leading-9 ">{children}</div>
     </div>
   );
 }

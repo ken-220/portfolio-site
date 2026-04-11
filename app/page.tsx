@@ -47,7 +47,7 @@ export default function Home() {
             WEB DESIGNER / FRONTEND
           </p>
 
-          <h2 className="fade-in-hero delay-1 mb-6 text-5xl font-black tracking-[0.08em] text-slate-900 md:text-7xl">
+          <h2 className="fade-in-hero delay-1 mb-6 text-5xl font-black tracking-[0.08em] text-[#333] md:text-7xl">
             PORTFOLIO
           </h2>
 
@@ -101,7 +101,7 @@ export default function Home() {
               </h3>
 
               {/* 説明 */}
-              <p className="mb-5 text-sm leading-7 text-slate-600">
+              <p className="mb-5 text-sm leading-7">
                 自分のスキルや制作物をまとめたポートフォリオサイト。
                 デザインから実装まで一貫して制作しました。
               </p>
@@ -147,7 +147,7 @@ export default function Home() {
             <p className="mb-2 text-sm font-semibold tracking-[0.18em] text-[#b59a6a]">
               LOGO
             </p>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-[#333]">
               ロゴ制作
             </h2>
           </div>
@@ -166,7 +166,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="mb-5 text-sm leading-7 text-slate-600">
+              <p className="mb-5 text-sm leading-7 text-[#333]">
                 AIコンサル事業のロゴ
               </p>
 
@@ -196,7 +196,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="mb-5 text-sm leading-7 text-slate-600">
+              <p className="mb-5 text-sm leading-7 text-[#333]">
                 学会・研究コミュニティのロゴ
               </p>
 
@@ -234,7 +234,7 @@ export default function Home() {
             <p className="mb-2 text-sm font-semibold tracking-[0.18em] text-[#b59a6a]">
               BANNER
             </p>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-[#333]">
               バナー制作
             </h2>
           </div>
@@ -253,7 +253,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="mb-5 text-sm leading-7 text-slate-600">
+              <p className="mb-5 text-sm leading-7 text-[#333]">
                 IT企業向けのバナー
               </p>
 
@@ -282,7 +282,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="mb-5 text-sm leading-7 text-slate-600">
+              <p className="mb-5 text-sm leading-7 text-[#333]">
                 美容・コスメのバナー
               </p>
 
@@ -316,7 +316,7 @@ export default function Home() {
             <p className="mb-2 text-sm font-semibold tracking-[0.18em] text-[#b59a6a]">
               CONTACT
             </p>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-[#333]">
               お問い合わせ
             </h2>
           </div>
@@ -340,7 +340,7 @@ export default function Home() {
               <div>
                 <label
                   htmlFor="name"
-                  className="mb-2 block text-xl font-black tracking-[0.12em] text-slate-900 md:text-2xl"
+                  className="mb-2 block text-xl font-black tracking-[0.12em] text-[#333] md:text-2xl"
                 >
                   NAME
                 </label>
@@ -362,7 +362,7 @@ export default function Home() {
               <div>
                 <label
                   htmlFor="email"
-                  className="mb-2 block text-xl font-black tracking-[0.12em] text-slate-900 md:text-2xl"
+                  className="mb-2 block text-xl font-black tracking-[0.12em] text-[#333] md:text-2xl"
                 >
                   MAIL ADDRESS
                 </label>
@@ -384,7 +384,7 @@ export default function Home() {
               <div>
                 <label
                   htmlFor="message"
-                  className="mb-2 block text-xl font-black tracking-[0.12em] text-slate-900 md:text-2xl"
+                  className="mb-2 block text-xl font-black tracking-[0.12em] text-[#333] md:text-2xl"
                 >
                   MESSAGE
                 </label>

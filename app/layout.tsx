@@ -1,11 +1,20 @@
+// =========================
+// 型定義・フォント・スタイルの読み込み
+// =========================
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
 
-// グローバルで使うフォント設定
+// =========================
+// 共通ヘッダー（Client Component）を読み込み
+// =========================
+import SiteHeader from "@/components/SiteHeader";
+
+// =========================
+// フォント設定（全ページ共通）
+// =========================
 const geistSans = Geist({
-  variable: "--font-geist-sans",
+  variable: "--font-geist-sans", // CSS変数として使用
   subsets: ["latin"],
 });
 
@@ -14,62 +23,48 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// サイト全体のメタ情報
+// =========================
+// ページメタ情報（SEO対策）
+// ※ Server Componentでのみ使用可能
+// =========================
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "My Portfolio Site",
+  title: "Portfolio", // ブラウザタブ・検索結果のタイトル
+  description: "My Portfolio Site", // 検索結果の説明文
 };
 
+// =========================
+// ルートレイアウト（全ページ共通の枠）
+// =========================
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
+    // =========================
+    // HTMLルート設定
+    // =========================
     <html
       lang="ja"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      {/* =========================
+          body全体の設定（背景・文字色・レイアウト）
+      ========================= */}
       <body className="min-h-full flex flex-col bg-[#f5f4ef] text-slate-900">
+
         {/* =========================
-            共通ヘッダー
-            全ページで共通表示される上部ナビゲーション
+            共通ヘッダー（全ページで表示）
         ========================= */}
-        <header className="sticky top-0 z-50 bg-[#f5f4ef]/80 backdrop-blur-md">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 md:py-6">
-            {/* サイトロゴ */}
-            <div className="flex items-center gap-3">
-              <img
-                src="/icon1.png"
-                alt="Portfolio logo"
-                className="h-9 w-9 rounded-full border border-slate-300 md:h-10 md:w-10"
-              />
-              <span className="text-base font-semibold tracking-[0.18em] text-slate-900 md:text-lg md:tracking-[0.22em]">
-                PORTFOLIO
-              </span>
-            </div>
+        <SiteHeader />
 
-            {/* グローバルナビゲーション */}
-            <nav className="flex items-center gap-4 text-sm font-semibold tracking-[0.12em] text-[#b59a6a] md:gap-10 md:text-lg md:tracking-[0.18em]">
-              <a href="/#works" className="hover:text-slate-900">
-                WORKS
-              </a>
-              <a href="/about" className="hover:text-slate-900">
-                ABOUT
-              </a>
-              <a href="/#contact" className="hover:text-slate-900">
-                CONTACT
-              </a>
-            </nav>
-          </div>
-        </header>
-
-        {/* 各ページの中身 */}
+        {/* =========================
+            各ページのコンテンツがここに入る
+        ========================= */}
         {children}
 
         {/* =========================
             共通フッター
-            全ページ共通で表示する下部情報
         ========================= */}
         <footer className="mt-auto bg-[#111] py-26">
           <div className="mx-auto max-w-6xl px-6 text-center">

@@ -35,7 +35,7 @@ export default function LogoWorksPage() {
               WORKS / LOGO
             </p>
 
-            <h1 className="mb-4 whitespace-nowrap text-3xl font-bold tracking-tight md:text-4xl">
+            <h1 className="mb-4 whitespace-nowrap text-3xl font-bold tracking-tight md:text-4xl text-[#333]">
               株式会社 AIXIA
             </h1>
 
@@ -63,7 +63,7 @@ export default function LogoWorksPage() {
         <section className="fade-in-hero delay-2 mt-24 border-t border-[#d8d1c6]">
           <div className="grid grid-cols-1 border-b border-[#d8d1c6] py-10 md:grid-cols-[180px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作意図</h2>
-            <p className="mt-4 leading-9 text-slate-700 md:mt-0">
+            <p className="mt-4 leading-9 text-[#333] md:mt-0">
               サービス名の「A」と「X」を掛け合わせてシンボルを作成。信頼感を伝えるために青系のカラーを使用し、
               アクセントカラーとしてオレンジを使用。オブジェクト全体を斜めに引き上げることで、AIの力でビジネスの未来を加速させる、
               といったイメージを表現しています。
@@ -72,12 +72,12 @@ export default function LogoWorksPage() {
 
           <div className="grid grid-cols-1 border-b border-[#d8d1c6] py-10 md:grid-cols-[180px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作期間</h2>
-            <p className="mt-4 leading-9 text-slate-700 md:mt-0">2時間</p>
+            <p className="mt-4 leading-9 text-[#333] md:mt-0">2時間</p>
           </div>
 
           <div className="grid grid-cols-1 py-10 md:grid-cols-[180px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">使用ツール</h2>
-            <p className="mt-4 leading-9 text-slate-700 md:mt-0">Adobe Illustrator</p>
+            <p className="mt-4 leading-9 text-[#333] md:mt-0">Adobe Illustrator</p>
           </div>
         </section>
 
@@ -123,7 +123,7 @@ export default function LogoWorksPage() {
               WORKS / LOGO
             </p>
 
-            <h1 className="mb-4 whitespace-nowrap text-3xl font-bold tracking-tight md:text-4xl">
+            <h1 className="mb-4 whitespace-nowrap text-3xl font-bold tracking-tight md:text-4xl ">
               SYNAPSLINK
             </h1>
 
@@ -139,7 +139,7 @@ export default function LogoWorksPage() {
         >
           <div className="grid border-b border-[#d8d1c6] py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作意図</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">
               視認性と先進性を両立できるよう、シンプルで構造的な文字設計を意識しました。
               学術・研究分野にふさわしい信頼感を持たせつつ、デジタルらしいシャープさも感じられるロゴを目指しています。
             </p>
@@ -147,12 +147,12 @@ export default function LogoWorksPage() {
 
           <div className="grid border-b border-[#d8d1c6] py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作期間</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">2時間</p>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">2時間</p>
           </div>
 
           <div className="grid py-10 md:grid-cols-[160px_1fr]">
             <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">使用ツール</h2>
-            <p className="mt-4 leading-8 text-slate-700 md:mt-0">Adobe Illustrator</p>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">Adobe Illustrator</p>
           </div>
         </section>
       </div>
