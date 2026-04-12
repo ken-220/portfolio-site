@@ -14,7 +14,6 @@ import { usePathname } from "next/navigation";
 // ヘッダーコンポーネント
 // =========================
 export default function SiteHeader() {
-
   // =========================
   // 現在のURLパスを取得
   // 例: "/" や "/about"
@@ -41,12 +40,12 @@ export default function SiteHeader() {
     // ヘッダー全体（固定表示）
     // =========================
     <header className="sticky top-0 z-50 bg-[#f5f4ef]/80 backdrop-blur-md">
-
       {/* =========================
-          コンテナ（中央寄せ + 横並び）
+          コンテナ
+          ・スマホでは縦並び
+          ・タブレット以上で横並び
       ========================= */}
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 md:py-6">
-
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between md:gap-0 md:px-8 md:py-6">
         {/* =========================
             ロゴ + サイト名
             クリックでトップへ
@@ -54,23 +53,24 @@ export default function SiteHeader() {
         <Link
           href="/"
           onClick={handleHomeClick}
-          className="flex items-center gap-3 transition hover:opacity-70"
+          className="flex items-center gap-2 transition hover:opacity-70 md:gap-3"
         >
           <img
             src="/icon1.png"
             alt="Portfolio logo"
-            className="h-9 w-9 rounded-full border border-slate-300 md:h-10 md:w-10"
+            className="h-8 w-8 rounded-full border border-slate-300 md:h-10 md:w-10"
           />
-          <span className="text-base font-semibold tracking-[0.18em] text-[#333] md:text-lg md:tracking-[0.22em]">
+          <span className="text-sm font-semibold tracking-[0.14em] text-[#333] md:text-lg md:tracking-[0.22em]">
             PORTFOLIO
           </span>
         </Link>
 
         {/* =========================
             ナビゲーションメニュー
+            ・スマホでは中央寄せ
+            ・文字間と余白を少し小さくする
         ========================= */}
-        <nav className="flex items-center gap-4 text-sm font-semibold tracking-[0.12em] text-[#b59a6a] md:gap-10 md:text-lg md:tracking-[0.18em]">
-
+        <nav className="flex flex-wrap items-center justify-center gap-4 text-xs font-semibold tracking-[0.08em] text-[#b59a6a] md:gap-10 md:text-lg md:tracking-[0.18em]">
           {/* WORKS（トップページ内リンク） */}
           <a href="/#works" className="hover:text-slate-900">
             WORKS
