@@ -212,9 +212,44 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Card 01: AIXIA */}
+            <div className={`card card-hover fade-in delay-0 ${logoVisible ? "show" : ""}`}>
+              <div className="mb-5 h-48 overflow-hidden rounded-2xl">
+                <Image
+                  src="/美容室サロン.png"
+                  alt="美容室ロゴ"
+                  width={500}
+                  height={300}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <p className="mb-5 text-sm leading-7 text-[#333]">
+                美容室・ヘアサロンのロゴ
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-full bg-[#ede7da] px-3 py-1 text-xs font-medium text-[#b59a6a]">
+                  Adobe Illustrator
+                </span>
+
+                <Link
+                  href="/works/logo#hair-salon"
+                  className="text-sm font-medium tracking-[0.12em] text-[#b59a6a] hover:underline"
+                >
+                  詳しく見る →
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
+
+
+
+
 
       {/* バナーセクション用アンカー位置調整 */}
       <section id="banner"></section>
@@ -301,6 +336,36 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Card 03 IT企業向けバナー */}
+            <div className={`card card-hover fade-in delay-0 ${bannerVisible ? "show" : ""}`}>
+              <div className="mb-5 h-48 overflow-hidden rounded-2xl">
+                <Image
+                  src="/秋旅.png"
+                  alt="秋旅バナー"
+                  width={500}
+                  height={300}
+                  className="h-full w-full object-contain"
+                />
+              </div>
+
+              <p className="mb-5 text-sm leading-7 text-[#333]">
+                旅行・観光バナー
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-full bg-[#ede7da] px-3 py-1 text-xs font-medium text-[#b59a6a]">
+                  Adobe Illustrator
+                </span>
+                <Link
+                  href="/works/banner#autumn-banner"
+                  className="text-sm font-medium tracking-[0.12em] text-[#b59a6a] hover:underline whitespace-nowrap"
+                >
+                  詳しく見る →
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

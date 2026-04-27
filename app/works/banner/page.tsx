@@ -170,6 +170,85 @@ export default function BannerWorksPage() {
             <p className="mt-4 leading-8 text-[#333] md:mt-0">Adobe Photoshop / Figma</p>
           </div>
         </section>
+
+        {/* 区切りラベル */}
+        <div className="my-24 flex items-center gap-6">
+          <div className="h-px flex-1 bg-[#d8d1c6]" />
+          <p className="text-xs font-semibold tracking-[0.24em] text-[#b59a6a]">BANNER 03</p>
+          <div className="h-px flex-1 bg-[#d8d1c6]" />
+        </div>
+
+        {/* =========================
+    BANNER 01 : IT企業向け
+========================= */}
+        <section
+          id="autumn-banner"
+          className="grid items-center gap-12 scroll-mt-32 lg:grid-cols-[320px_minmax(0,1fr)]"
+        >
+          {/* 左：作品情報 */}
+          <div
+            className={`flex h-full flex-col justify-center transition-all duration-1000 ease-out ${banner1Visible ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"
+              }`}
+          >
+            <p className="mb-4 text-sm font-semibold tracking-[0.18em] text-[#b59a6a]">
+              WORKS / BANNER
+            </p>
+
+            <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-3xl lg:text-4xl text-[#333]">
+              秋旅バスツアー
+            </h1>
+
+            <p className="text-base text-slate-500">
+              旅行・観光バナー
+            </p>
+          </div>
+
+          {/* 右：モックアップ画像 */}
+          <div
+            ref={banner1Ref}
+            className={`flex justify-center md:justify-start lg:justify-end transition-all duration-1000 ease-out ${banner1Visible ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0"
+              }`}
+          >
+            <div className="w-full max-w-[620px] overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
+              <Image
+                src="/秋旅.png"
+                alt="秋旅バナー"
+                width={1200}
+                height={800}
+                className="h-auto w-full object-contain"
+              />
+            </div>
+          </div>
+        </section>
+
+
+
+        {/* 詳細情報 01 */}
+        <section
+          ref={detail1Ref}
+          className={`mt-20 border-t border-[#d8d1c6] transition-all duration-700 ease-out ${detail1Visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+            }`}
+        >
+          <div className="grid border-b border-[#d8d1c6] py-10 md:grid-cols-[160px_1fr]">
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作意図</h2>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">
+              秋の魅力を視覚的に伝えるため、紅葉の鮮やかな写真を複数組み合わせ、季節感を強調しました。
+              中央に円形のレイアウトを配置することで視線を集め、情報が一目で伝わる構成にしています。
+              温かみのある配色とやわらかいフォントを使用し、旅行の楽しさや安心感を感じられるデザインを意識しました。
+            </p>
+          </div>
+
+          <div className="grid border-b border-[#d8d1c6] py-10 md:grid-cols-[160px_1fr]">
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作期間</h2>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">3時間</p>
+          </div>
+
+          <div className="grid py-10 md:grid-cols-[160px_1fr]">
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">使用ツール</h2>
+            <p className="mt-4 leading-8 text-[#333] md:mt-0">Adobe Illustrator</p>
+          </div>
+        </section>
+
       </div>
     </main >
   );

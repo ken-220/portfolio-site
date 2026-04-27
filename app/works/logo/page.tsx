@@ -155,6 +155,71 @@ export default function LogoWorksPage() {
             <p className="mt-4 leading-8 text-[#333] md:mt-0">Adobe Illustrator</p>
           </div>
         </section>
+
+        {/* =========================
+            LOGO 03 : HAIR SALON
+        ========================= */}
+        <div className="my-24 flex items-center gap-6">
+          <div className="h-px flex-1 bg-[#d8d1c6]" />
+          <p className="text-xs font-semibold tracking-[0.24em] text-[#b59a6a]">
+            LOGO 03
+          </p>
+          <div className="h-px flex-1 bg-[#d8d1c6]" />
+        </div>
+
+        <section id="hair-salon" className="grid items-center gap-12 md:grid-cols-[240px_1fr]">
+
+          {/* 左：テキスト */}
+          <div className="flex h-full flex-col justify-center">
+            <p className="mb-4 text-sm font-semibold tracking-[0.18em] text-[#b59a6a]">
+              WORKS / LOGO
+            </p>
+
+            <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl text-[#333]">
+              HAIR SALON
+            </h1>
+
+            <p className="text-base text-slate-500">
+              美容室・ヘアサロンのロゴ
+            </p>
+          </div>
+
+          {/* 右：画像 */}
+          <div className="flex justify-center md:justify-end">
+            <div className="w-full max-w-[520px] overflow-hidden bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
+              <Image
+                src="/美容室-mockup2.png"
+                alt="ロゴ"
+                width={1000}
+                height={800}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* 詳細情報 01 */}
+        <section className="fade-in-hero delay-2 mt-24 border-t border-[#d8d1c6]">
+          <div className="grid grid-cols-1 border-b border-[#d8d1c6] py-10 md:grid-cols-[180px_1fr]">
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作意図</h2>
+            <p className="mt-4 leading-9 text-[#333] md:mt-0">
+              上品で洗練された印象を与えることを目的に、繊細で流れるようなラインを取り入れたタイポグラフィをデザインしました。
+              髪のしなやかさや美しさを連想させる曲線をアクセントに加えることで、美容サロンらしい柔らかさと女性らしさを表現しています。
+              ゴールドカラーを基調とすることで高級感を演出し、特別感のあるブランドイメージを意識しました。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 border-b border-[#d8d1c6] py-10 md:grid-cols-[180px_1fr]">
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">制作期間</h2>
+            <p className="mt-4 leading-9 text-[#333] md:mt-0">3時間</p>
+          </div>
+
+          <div className="grid grid-cols-1 py-10 md:grid-cols-[180px_1fr]">
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-slate-500">使用ツール</h2>
+            <p className="mt-4 leading-9 text-[#333] md:mt-0">Adobe Illustrator</p>
+          </div>
+        </section>
+
       </div>
     </main>
   );
