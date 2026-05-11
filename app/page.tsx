@@ -82,6 +82,7 @@ export default function Home() {
 
           {/* カード一覧 */}
           <div className="grid gap-8 md:grid-cols-3">
+
             {/* Card 01: Portfolio Website */}
             <div className={`card card-hover fade-in ${portfolioVisible ? "show" : ""}`}>
               {/* サムネイル画像 */}
@@ -128,6 +129,61 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Card 02: Cafe Website */}
+            <div className={`card card-hover fade-in ${portfolioVisible ? "show" : ""}`}>
+              {/* サムネイル画像 */}
+              <div className="mb-5 h-48 overflow-hidden rounded-2xl">
+                {/* 制作中バッジ */}
+                <span className="absolute left-3 top-3 z-10 rounded-full bg-[#b59a6a] px-3 py-1 text-xs font-medium text-white shadow">
+                  現在制作中
+                </span>
+
+                <Image
+                  src="/カフェ.png"
+                  alt="ポートフォリオサイト"
+                  width={500}
+                  height={300}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              {/* タイトル */}
+              <h3 className="mb-4 text-2xl font-semibold tracking-tight">
+                カフェサイト
+              </h3>
+
+              {/* 説明 */}
+              <p className="mb-5 text-sm leading-7">
+                カフェの世界観を意識し、
+                落ち着きのあるデザインと
+                見やすいレイアウトで制作した
+                Webサイトです。
+              </p>
+
+              {/* 下部：技術タグ + 詳細ページリンク */}
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-full bg-[#ede7da] px-3 py-1 text-xs font-medium text-[#b59a6a]">
+                    WordPress
+                  </span>
+                  <span className="rounded-full bg-[#ede7da] px-3 py-1 text-xs font-medium text-[#b59a6a]">
+                    Figma
+                  </span>
+                  <span className="rounded-full bg-[#ede7da] px-3 py-1 text-xs font-medium text-[#b59a6a]">
+                    Adobe Illustrator
+                  </span>
+                </div>
+
+                {/* <Link
+                  href="/works/portfolio"
+                  className="whitespace-nowrap text-sm font-medium tracking-[0.12em] text-[#b59a6a] hover:underline"
+                >
+                  詳しく見る →
+                </Link> */}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -274,14 +330,17 @@ export default function Home() {
             </h2>
           </div>
 
+
+
           {/* カード一覧 */}
           <div className="grid gap-8 md:grid-cols-3">
-            {/* Card 01: IT企業向けバナー */}
+
+            {/* Card 01 旅行企業向けバナー */}
             <div className={`card card-hover fade-in delay-0 ${bannerVisible ? "show" : ""}`}>
               <div className="mb-5 h-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/banner-ai.webp"
-                  alt="作品サンプル"
+                  src="/秋旅.png"
+                  alt="秋旅バナー"
                   width={500}
                   height={300}
                   className="h-full w-full object-contain"
@@ -289,7 +348,7 @@ export default function Home() {
               </div>
 
               <p className="mb-5 text-sm leading-7 text-[#333]">
-                IT企業向けのバナー
+                旅行・観光バナー
               </p>
 
               <div className="flex flex-wrap gap-2">
@@ -297,13 +356,14 @@ export default function Home() {
                   Adobe Illustrator
                 </span>
                 <Link
-                  href="/works/banner#banner-ai"
+                  href="/works/banner#autumn-banner"
                   className="text-sm font-medium tracking-[0.12em] text-[#b59a6a] hover:underline whitespace-nowrap"
                 >
                   詳しく見る →
                 </Link>
               </div>
             </div>
+
 
             {/* Card 02: 美容・コスメ向けバナー */}
             <div className={`card card-hover fade-in delay-2 ${bannerVisible ? "show" : ""}`}>
@@ -337,12 +397,12 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Card 03 IT企業向けバナー */}
+            {/* Card 03: IT企業向けバナー */}
             <div className={`card card-hover fade-in delay-0 ${bannerVisible ? "show" : ""}`}>
               <div className="mb-5 h-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/秋旅.png"
-                  alt="秋旅バナー"
+                  src="/banner-ai.webp"
+                  alt="作品サンプル"
                   width={500}
                   height={300}
                   className="h-full w-full object-contain"
@@ -350,7 +410,7 @@ export default function Home() {
               </div>
 
               <p className="mb-5 text-sm leading-7 text-[#333]">
-                旅行・観光バナー
+                IT企業向けのバナー
               </p>
 
               <div className="flex flex-wrap gap-2">
@@ -358,13 +418,14 @@ export default function Home() {
                   Adobe Illustrator
                 </span>
                 <Link
-                  href="/works/banner#autumn-banner"
+                  href="/works/banner#banner-ai"
                   className="text-sm font-medium tracking-[0.12em] text-[#b59a6a] hover:underline whitespace-nowrap"
                 >
                   詳しく見る →
                 </Link>
               </div>
             </div>
+
 
           </div>
         </div>
